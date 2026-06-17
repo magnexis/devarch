@@ -5,10 +5,6 @@
 </p>
 
 <p align="center">
-  <strong>Developed and released by Magnexis</strong>
-</p>
-
-<p align="center">
   <em>Software archaeology and repository intelligence from Magnexis<img src="assets/magnexis-logo.png" alt="Magnexis logo" width="35"></em>
 </p>
 
