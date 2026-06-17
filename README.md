@@ -136,6 +136,8 @@ This produces the following artifacts in `dist/`:
 
 The zip bundle is convenient for sharing the release set as a single downloadable package.
 
+See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the full release summary and artifact inventory.
+
 ## Command Reference
 
 ### Core excavation
