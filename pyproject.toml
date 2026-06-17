@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devarch"
+version = "0.2.0"
+description = "Dev Archaeologist: excavate dead code, technical debt, and forgotten artifacts in software projects."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+  {name = "magnexis"},
+]
+dependencies = [
+  "typer>=0.12.3",
+  "rich>=13.7.1",
+  "pathspec>=0.12.1",
+]
+
+[project.optional-dependencies]
+extended = [
+  "radon>=6.0.1",
+  "networkx>=3.3",
+  "gitpython>=3.1.43",
+  "tree-sitter>=0.22.3",
+]
+pdf = [
+  "reportlab>=4.2.2",
+]
+test = [
+  "pytest>=8.2.2",
+]
+
+[project.scripts]
+devarch = "devarch.cli.main:app"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["devarch*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
