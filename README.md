@@ -124,15 +124,11 @@ python scripts/build_release.py
 
 This produces the following artifacts in `dist/`:
 
-- `*.whl` for Python wheel distribution
-- `*.tar.gz` for source distribution
-- `*-release.zip` for a bundled release archive
+- `devarch-0.2.0-py3-none-any.whl` for the Python wheel
+- `devarch-0.2.0.tar.gz` for the source distribution
+- `devarch-0.2.0-release.zip` for the bundled release archive
 - `release-manifest.json` for artifact metadata
 - `SHA256SUMS.txt` for checksum verification
-
-The zip bundle is convenient for sharing the release set as a single downloadable package.
-
-See [RELEASE_NOTES.md](RELEASE_NOTES.md) for the full release summary and artifact inventory.
 
 ## Command Reference
 
