@@ -19,9 +19,11 @@ def dependency_count(content: str) -> int:
     count = 0
     for line in content.splitlines():
         line = line.strip()
-        if line.startswith("import ") or line.startswith("from "):
+        if line.startswith("import "):
             count += 1
-        if line.startswith("require(") or "import " in line:
+        elif line.startswith("from "):
+            count += 1
+        elif line.startswith("require("):
             count += 1
     return count
 
